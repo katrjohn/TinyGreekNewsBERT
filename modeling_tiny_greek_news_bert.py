@@ -3,8 +3,11 @@ from transformers import BertModel, BertPreTrainedModel
 from transformers import BertConfig, AutoTokenizer
 
 class TinyGreekNewsBert(BertPreTrainedModel):
-    def __init__(self, config, num_labels_class, num_labels_ner, ner_loss_weight=3.0):
+        def __init__(self, config):
         super().__init__(config)
+        num_labels_class = config.num_labels_class
+        num_labels_ner = config.num_labels_ner
+        self.ner_loss_weight = getattr(config, "ner_loss_weight", 3.0)
         self.bert = BertModel(config)
         
         # Classification head
@@ -20,7 +23,6 @@ class TinyGreekNewsBert(BertPreTrainedModel):
         # For normalization
         self.initial_cls_loss = None
         self.initial_ner_loss = None
-        self.ner_loss_weight = ner_loss_weight
 
     def forward(self, input_ids, attention_mask=None, token_type_ids=None,
                 labels_class=None, labels_ner=None):

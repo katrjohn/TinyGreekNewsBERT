@@ -1,8 +1,9 @@
 {
   "_name_or_path": "./tinyGreekBERT_1905",
-  "architectures": [
-    "TinyGreekNewsBert"
-  ],
+  "architectures": ["TinyGreekBertMultiTask"],
+  "auto_map": {
+    "AutoModel": "modeling_tiny_greek_news_bert.TinyGreekNewsBert"
+  },
   "attention_probs_dropout_prob": 0.1,
   "classifier_dropout": null,
   "hidden_act": "gelu",

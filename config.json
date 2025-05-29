@@ -12,7 +12,7 @@
   "intermediate_size": 1024,
   "layer_norm_eps": 1e-12,
   "max_position_embeddings": 512,
-  "model_type": "tiny_greek_news_bert",
+  "model_type": "bert",
   "num_attention_heads": 4,
   "num_hidden_layers": 6,
   "num_labels_class": 19,

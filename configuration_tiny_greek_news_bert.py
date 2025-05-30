@@ -15,5 +15,4 @@ class TinyGreekNewsBertConfig(BertConfig):
         self.num_labels_ner   = num_labels_ner
         self.ner_loss_weight  = ner_loss_weight
 
-# 👇 this writes the AutoConfig mapping when you save_pretrained()
 TinyGreekNewsBertConfig.register_for_auto_class()

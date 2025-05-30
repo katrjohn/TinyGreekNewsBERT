@@ -2,7 +2,6 @@ import torch.nn as nn
 from transformers import BertModel, BertPreTrainedModel
 from transformers import BertConfig, AutoTokenizer
 
-@register_config("tiny_greek_news_bert")
 class TinyGreekNewsBert(BertPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
@@ -77,3 +76,4 @@ class TinyGreekNewsBert(BertPreTrainedModel):
             return (loss, logits_class, logits_ner)
         else:
             return (logits_class, logits_ner)
+TinyGreekNewsBert.register_for_auto_class("AutoModel")

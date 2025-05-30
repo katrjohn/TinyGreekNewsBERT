@@ -1,7 +1,7 @@
 import torch.nn as nn
 from transformers import BertModel, BertPreTrainedModel
 from transformers import BertConfig, AutoTokenizer
-from configuration_tiny_greek_news_bert import TinyGreekNewsBertConfig
+from .configuration_tiny_greek_news_bert import TinyGreekNewsBertConfig
 
 class TinyGreekNewsBert(BertPreTrainedModel):
     config_class = TinyGreekNewsBertConfig

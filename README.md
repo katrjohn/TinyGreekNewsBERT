@@ -14,7 +14,7 @@ tags:
 
 
 # Model Description
-This model is a distilled and finetuned version of nlpaueb/bert-base-greek-uncased-v1
+This model is a distilled and finetuned version of [GreekBert](https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1)
 
 ## Dataset
 The model was distilled and finetuned on the GreekNewsNERClassif [dataset](https://huggingface.co/datasets/katrjohn/Greek-News-NER-Classif)
@@ -105,3 +105,20 @@ Predicted class label: Πολιτική και κυβέρνηση
 [SEP]: O
 
 ```
+
+If you use the model, please cite the following:
+
+@inproceedings{XXX,
+author = {XXX},
+title = {XXX},
+year = {XXX},
+isbn = {XXX},
+publisher = {XXX},
+address = {XXX},
+url = {XXX},
+booktitle = {XXX},
+pages = {XXX},
+numpages = {XXX},
+location = {XXX},
+series = {XXX}
+}

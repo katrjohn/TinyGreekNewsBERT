@@ -16,7 +16,10 @@ tags:
 # Model Description
 This model is a distilled and finetuned version of nlpaueb/bert-base-greek-uncased-v1
 
-## To use this model 
+## Dataset
+The model was distilled and finetuned on the GreekNewsNERClassif [dataset](https://huggingface.co/datasets/katrjohn/Greek-News-NER-Classif)
+
+### To use this model 
 ```
 pip install transformers, torch
 ```
@@ -28,7 +31,7 @@ model = AutoModel.from_pretrained("katrjohn/TinyGreekNewsBERT", trust_remote_cod
 tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
 ```
 
-### Example usage 
+#### Example usage 
 ```
 from transformers import AutoTokenizer, AutoModel
 import torch

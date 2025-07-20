@@ -107,7 +107,7 @@ Predicted class label: Πολιτική και κυβέρνηση
 ```
 
 If you use the model, please cite the following:
-
+```
 @inproceedings{XXX,
 author = {XXX},
 title = {XXX},
@@ -122,3 +122,4 @@ numpages = {XXX},
 location = {XXX},
 series = {XXX}
 }
+```

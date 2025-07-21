@@ -48,7 +48,7 @@ Perfomance on the [GreekNews-20k dataset](https://huggingface.co/datasets/katrjo
 | **Macro avg**                                   | 0.79      | 0.79   | 0.79     | 5837    |
 | **Weighted avg**                                | 0.78      | 0.78   | 0.78     | 5837    |
 
-| Class    | Precision | Recall | F1-score | Support |
+| Entity    | Precision | Recall | F1-score | Support |
 |----------|-----------|--------|----------|---------|
 | CARDINAL | 0.87      | 0.93   | 0.90     | 25656   |
 | DATE     | 0.87      | 0.90   | 0.88     | 15469   |
@@ -71,7 +71,7 @@ Perfomance on the [GreekNews-20k dataset](https://huggingface.co/datasets/katrjo
 
 Performance on the [elNER dataset](https://github.com/nmpartzio/elNER) :
 
-| Class    | Precision | Recall | F1-score | Support |
+| Entity    | Precision | Recall | F1-score | Support |
 |----------|-----------|--------|----------|---------|
 | CARDINAL | 0.90      | 0.93   | 0.91     | 911     |
 | DATE     | 0.90      | 0.92   | 0.91     | 838     |

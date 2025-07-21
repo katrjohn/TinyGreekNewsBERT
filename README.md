@@ -100,7 +100,7 @@ pip install transformers, torch
 ```
 
 ```
-from transformers import AutoModel
+from transformers import AutoModel, AutoTokenizer
 
 model = AutoModel.from_pretrained("katrjohn/TinyGreekNewsBERT", trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")

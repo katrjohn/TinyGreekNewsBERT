@@ -108,11 +108,7 @@ tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
 
 ##### Example usage 
 ```
-from transformers import AutoTokenizer, AutoModel
 import torch
-
-tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
-model = AutoModel.from_pretrained("katrjohn/TinyGreekNewsBERT", trust_remote_code=True)
 
 # Classification label dictionary (reverse)
 classification_label_dict_reverse = {
@@ -157,6 +153,7 @@ for token, pred_idx in zip(tokens, ner_predictions):
     if token in ["[CLS]", "[SEP]"]:
         tag = "O"
     print(f"{token}: {tag}")
+
 
 ```
 

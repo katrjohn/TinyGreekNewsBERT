@@ -99,7 +99,7 @@ Performance on the [elNER dataset](https://github.com/nmpartzio/elNER) :
 pip install transformers, torch
 ```
 
-```
+```python
 from transformers import AutoModel, AutoTokenizer
 
 model = AutoModel.from_pretrained("katrjohn/TinyGreekNewsBERT", trust_remote_code=True)
@@ -107,7 +107,7 @@ tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
 ```
 
 ##### Example usage 
-```
+```python
 import torch
 
 # Classification label dictionary (reverse)

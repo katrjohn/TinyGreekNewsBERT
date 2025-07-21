@@ -17,7 +17,7 @@ tags:
 This model is a 14.1M parameter distilled and finetuned version of [GreekBert](https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1)
 
 ## Dataset
-The model was distilled and finetuned on the [GreekNews-20k dataset](https://huggingface.co/datasets/katrjohn/GreekNews-20k)
+The model was distilled and finetuned on the [GreekNews-20k dataset](https://huggingface.co/datasets/katrjohn/GreekNews-20k) and [GreekNews-20k dataset](https://huggingface.co/datasets/katrjohn/GreekNews-20k) datasets.
 
 ### Results
 

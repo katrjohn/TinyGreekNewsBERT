@@ -17,9 +17,84 @@ tags:
 This model is a distilled and finetuned version of [GreekBert](https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1)
 
 ## Dataset
-The model was distilled and finetuned on the GreekNewsNERClassif [dataset](https://huggingface.co/datasets/katrjohn/Greek-News-NER-Classif)
+The model was distilled and finetuned on the [GreekNewsNERClassif dataset](https://huggingface.co/datasets/katrjohn/Greek-News-NER-Classif)
 
-### To use this model 
+### Results
+
+Perfomance on the [GreekNewsNERClassif dataset](https://huggingface.co/datasets/katrjohn/Greek-News-NER-Classif) :
+
+| Class                                           | Precision | Recall | F1-score | Support |
+|-------------------------------------------------|-----------|--------|----------|---------|
+| Αυτοκίνητο                                      | 0.87      | 0.95   | 0.90     | 201     |
+| Επιχειρήσεις και βιομηχανία                     | 0.68      | 0.76   | 0.72     | 369     |
+| Έγκλημα και δικαιοσύνη                          | 0.86      | 0.87   | 0.87     | 314     |
+| Ειδήσεις για καταστροφές και έκτακτες ανάγκες   | 0.79      | 0.71   | 0.75     | 272     |
+| Οικονομικά και χρηματοοικονομικά                | 0.78      | 0.70   | 0.73     | 495     |
+| Εκπαίδευση                                      | 0.86      | 0.83   | 0.84     | 259     |
+| Ψυχαγωγία και πολιτισμός                        | 0.68      | 0.79   | 0.73     | 251     |
+| Περιβάλλον και κλίμα                           | 0.78      | 0.65   | 0.71     | 292     |
+| Οικογένεια και σχέσεις                          | 0.80      | 0.81   | 0.81     | 294     |
+| Μόδα                                            | 0.84      | 0.91   | 0.87     | 259     |
+| Τρόφιμα και ποτά                                | 0.65      | 0.75   | 0.70     | 262     |
+| Υγεία και ιατρική                               | 0.74      | 0.64   | 0.68     | 346     |
+| Μεταφορές και υποδομές                          | 0.78      | 0.82   | 0.80     | 321     |
+| Ψυχική υγεία και ευεξία                         | 0.72      | 0.72   | 0.72     | 348     |
+| Πολιτική και κυβέρνηση                          | 0.76      | 0.68   | 0.72     | 339     |
+| Θρησκεία                                        | 0.92      | 0.87   | 0.90     | 271     |
+| Αθλητισμός                                      | 0.97      | 0.98   | 0.97     | 212     |
+| Ταξίδια και αναψυχή                             | 0.80      | 0.80   | 0.80     | 424     |
+| Τεχνολογία και επιστήμη                         | 0.65      | 0.75   | 0.70     | 308     |
+| **Accuracy**                                    |           |        | 0.78     | 5837    |
+| **Macro avg**                                   | 0.79      | 0.79   | 0.79     | 5837    |
+| **Weighted avg**                                | 0.78      | 0.78   | 0.78     | 5837    |
+
+| Class    | Precision | Recall | F1-score | Support |
+|----------|-----------|--------|----------|---------|
+| CARDINAL | 0.87      | 0.93   | 0.90     | 25656   |
+| DATE     | 0.87      | 0.90   | 0.88     | 15469   |
+| EVENT    | 0.60      | 0.59   | 0.59     | 1720    |
+| FAC      | 0.39      | 0.51   | 0.44     | 2118    |
+| GPE      | 0.88      | 0.86   | 0.87     | 16010   |
+| LOC      | 0.72      | 0.65   | 0.68     | 3547    |
+| MONEY    | 0.73      | 0.76   | 0.74     | 3882    |
+| NORP     | 0.89      | 0.84   | 0.86     | 1926    |
+| ORDINAL  | 0.92      | 0.96   | 0.94     | 3891    |
+| ORG      | 0.69      | 0.76   | 0.72     | 22184   |
+| PERCENT  | 0.72      | 0.78   | 0.75     | 7286    |
+| PERSON   | 0.79      | 0.85   | 0.82     | 16524   |
+| PRODUCT  | 0.48      | 0.48   | 0.48     | 2071    |
+| QUANTITY | 0.64      | 0.68   | 0.66     | 2588    |
+| TIME     | 0.74      | 0.76   | 0.75     | 2390    |
+| **Micro avg** | 0.78  | 0.83   | 0.81     | 127262  |
+| **Macro avg** | 0.73  | 0.75   | 0.74     | 127262  |
+| **Weighted avg** | 0.79 | 0.83 | 0.81     | 127262  |
+
+Performance on the [elNER dataset](https://github.com/nmpartzio/elNER) :
+
+| Class    | Precision | Recall | F1-score | Support |
+|----------|-----------|--------|----------|---------|
+| CARDINAL | 0.90      | 0.93   | 0.91     | 911     |
+| DATE     | 0.90      | 0.92   | 0.91     | 838     |
+| EVENT    | 0.43      | 0.46   | 0.45     | 130     |
+| FAC      | 0.34      | 0.47   | 0.40     | 77      |
+| GPE      | 0.83      | 0.90   | 0.86     | 826     |
+| LOC      | 0.70      | 0.63   | 0.66     | 178     |
+| MONEY    | 0.93      | 0.95   | 0.94     | 111     |
+| NORP     | 0.81      | 0.87   | 0.84     | 141     |
+| ORDINAL  | 0.94      | 0.92   | 0.93     | 172     |
+| ORG      | 0.74      | 0.72   | 0.73     | 1388    |
+| PERCENT  | 0.93      | 0.99   | 0.96     | 206     |
+| PERSON   | 0.84      | 0.86   | 0.85     | 1051    |
+| PRODUCT  | 0.46      | 0.41   | 0.43     | 83      |
+| QUANTITY | 0.70      | 0.75   | 0.73     | 65      |
+| TIME     | 0.88      | 0.81   | 0.84     | 137     |
+| **Micro avg** | 0.82  | 0.83   | 0.82     | 6314    |
+| **Macro avg** | 0.76  | 0.77   | 0.76     | 6314    |
+| **Weighted avg** | 0.82 | 0.83 | 0.82     | 6314    |
+
+
+
+#### To use this model 
 ```
 pip install transformers, torch
 ```
@@ -31,7 +106,7 @@ model = AutoModel.from_pretrained("katrjohn/TinyGreekNewsBERT", trust_remote_cod
 tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
 ```
 
-#### Example usage 
+##### Example usage 
 ```
 from transformers import AutoTokenizer, AutoModel
 import torch

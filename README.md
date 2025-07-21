@@ -181,7 +181,8 @@ Predicted class label: Πολιτική και κυβέρνηση
 
 ```
 
-If you use the model, please cite the following:
+#### Author
+This model has been released along side with the article XXX. To used this model please cite the following:
 ```
 @inproceedings{XXX,
 author = {XXX},

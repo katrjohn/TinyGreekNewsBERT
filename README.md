@@ -179,20 +179,20 @@ Predicted class label: Πολιτική και κυβέρνηση
 ```
 
 #### Author
-This model has been released along side with the article XXX. To use this model please cite the following:
+This model has been released along side with the article: Named Entity Recognition and News Article Classification: A Lightweight Approach.
+To use this model please cite the following:
 ```
-@inproceedings{XXX,
-author = {XXX},
-title = {XXX},
-year = {XXX},
-isbn = {XXX},
-publisher = {XXX},
-address = {XXX},
-url = {XXX},
-booktitle = {XXX},
-pages = {XXX},
-numpages = {XXX},
-location = {XXX},
-series = {XXX}
+@article{Katranis2025Access,
+  author  = {Ioannis Katranis and Christos Troussas and Akrivi Krouska and Phivos Mylonas and Cleo Sgouropoulou},
+  title   = {Named Entity Recognition and News Article Classification: A Lightweight Approach},
+  journal = {IEEE Access},
+  year    = {2025},
+  pages   = {1--1},
+  issn    = {2169-3536},
+  doi     = {10.1109/ACCESS.2025.3605709},
+  url     = {https://ieeexplore.ieee.org/document/11148234},
+  note    = {Early Access},
+  month   = sep
 }
+
 ```

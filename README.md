@@ -10,6 +10,7 @@ tags:
 - NewsArticle
 - Classification
 - NER
+pipeline_tag: text-classification
 ---
 
 

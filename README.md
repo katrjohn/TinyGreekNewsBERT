@@ -12,7 +12,9 @@ tags:
 - NER
 ---
 
-# You can test a live version of the model here! https://huggingface.co/spaces/katrjohn/Test2
+## You can test a live version of the model here! https://huggingface.co/spaces/katrjohn/Test2
+
+
 # Model Description
 This model is a 14.1M parameter distilled and finetuned version of [GreekBert](https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1)
 

@@ -14,7 +14,7 @@ tags:
 
 
 
-## You can test a live version of the model here! https://huggingface.co/spaces/katrjohn/Test2
+## You can test a live version of the model here! https://huggingface.co/spaces/katrjohn/TinyGreekNewsBERT
 
 
 # Model Description

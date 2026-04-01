@@ -19,6 +19,8 @@ tags:
 # Model Description
 This model is a 14.1M parameter distilled and finetuned version of [GreekBert](https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1)
 
+---
+
 ## You can test a live version of the model here: [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg.svg)](https://huggingface.co/spaces/katrjohn/TinyGreekNewsBERT)
 
 <p align="center">

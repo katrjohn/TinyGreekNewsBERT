@@ -194,17 +194,15 @@ Predicted class label: Πολιτική και κυβέρνηση
 This model has been released along side with the article: Named Entity Recognition and News Article Classification: A Lightweight Approach.
 To use this model please cite the following:
 ```
-@article{Katranis2025Access,
-  author  = {Ioannis Katranis and Christos Troussas and Akrivi Krouska and Phivos Mylonas and Cleo Sgouropoulou},
-  title   = {Named Entity Recognition and News Article Classification: A Lightweight Approach},
-  journal = {IEEE Access},
-  year    = {2025},
-  pages   = {1--1},
-  issn    = {2169-3536},
-  doi     = {10.1109/ACCESS.2025.3605709},
-  url     = {https://ieeexplore.ieee.org/document/11148234},
-  note    = {Early Access},
-  month   = sep
-}
+@ARTICLE{11148234,
+  author={Katranis, Ioannis and Troussas, Christos and Krouska, Akrivi and Mylonas, Phivos and Sgouropoulou, Cleo},
+  journal={IEEE Access}, 
+  title={Named Entity Recognition and News Article Classification: A Lightweight Approach}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={155031-155046},
+  keywords={Accuracy;Transformers;Pipelines;Named entity recognition;Computational modeling;Vocabulary;Tagging;Real-time systems;Benchmark testing;Training;Distilled transformer;edge-deployable model;multiclass news-topic classification;named entity recognition},
+  doi={10.1109/ACCESS.2025.3605709}}
 
 ```

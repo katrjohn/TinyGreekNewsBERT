@@ -13,7 +13,7 @@ tags:
 ---
 
 
-
+---
 
 
 # Model Description
@@ -24,7 +24,6 @@ This model is a 14.1M parameter distilled and finetuned version of [GreekBert](h
 
 <p align="center">
    <img src="tinygreeknewsbert-mascot2.png" alt="TinyGreekNewsBERT mascot" width="360">
- 
 </p>
 
 ---

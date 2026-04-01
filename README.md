@@ -16,7 +16,6 @@ tags:
 
 
 
-
 # Model Description
 This model is a 14.1M parameter distilled and finetuned version of [GreekBert](https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1)
 

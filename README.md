@@ -108,7 +108,7 @@ Performance on the [elNER dataset](https://github.com/nmpartzio/elNER) :
 
 #### To use this model 
 ```
-pip install transformers, torch
+pip install transformers==4.46.1, torch
 ```
 
 ```python
